@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './components/Cards'
+import Card from './components/Card';
 
 const App = () => {
   const data = [
@@ -102,6 +103,7 @@ const App = () => {
         return <Cards data={user}/>;
       })}
       </section>
+      <Card/>
     </>
   )
 };

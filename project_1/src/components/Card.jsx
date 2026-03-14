@@ -25,12 +25,24 @@ const Card = () => {
                     </div>
                 </div>
 
-                <div className='card bg-white w-auto h-auto max-w-sm rounded-4xl shadow-2xl my-5 mx-6 py-0 px-0'>
+                <div className='card bg-white w-auto h-auto max-w-sm rounded-3xl shadow-2xl my-5 mx-6 py-0 px-0'>
                     <div className='flex items-start justify-between'>
-                        <img src="https://carveyourcraving.com/wp-content/uploads/2021/06/chocolate-icecream-in-an-icecream-maker.jpg" alt="Image Not Found" className='rounded-4xl mt=0' />
+                        <img src="https://ninja-icecream.com/wp-content/uploads/2025/09/recette-glace-nutella-800x530.png" alt="Image Not Found" className='rounded-3xl mt=0' />
                     </div>
                     <div className='bg-white w-full h-auto max-w-sm rounded-none'>
-
+                        <h2 className='text-gray-600 font-bold text-3xl pt-3 px-5 mt-2'>Vanila ice-creame</h2>
+                        <div className='flex gap-9 px-5 ml-2 font-semibold text-gray-500 text-sm'><p>Vegan</p><p>Glutan free</p><p>Organic</p></div>
+                        <p className='font-semibold text-gray-400 mt-4 mx-5 font-sans text-xl'>Ice cream brings a smile to my face.</p>
+                        <div className='text-gray-500 flex gap-2 px-5 mt-1'>
+                            <p>Toppings</p>
+                            <p className='border-2 border-gray-300 rounded-2xl py-0 px-2'>Choco Chips</p>
+                            <p className='border-2 border-gray-300 rounded-2xl py-0 px-2'>Nuts</p>
+                        </div>
+                        <div className= 'px-5 mt-1 py'>
+                            <h2 className='text-yellow-500 font-bold text-3xl'>$10.00</h2>
+                            <p className='text-gray-500 text-sm'>+$2 delivery</p>
+                        </div>
+                        <button className='text-amber-950 font-bold text-3xl '>Add to cart</button>
                     </div>
 
                 </div>

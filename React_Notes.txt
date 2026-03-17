@@ -1,0 +1,78 @@
+---------------------------React-notes---------------------
+
+1st step: - react vite@latest--write in terminal -project name,select react,javascipt,1st que-no,2nd que-yes.
+
+
+-aek folder craete thay jashe-
+ aema app.css delete karo.
+-remove app.jsx content and write in this file -rafce . then enter tab 
+-remove index.css content and only remain this.->
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+-------------------------------------
+
+create Components folder in src.
+-add card.jsx file.
+-write rafse in this file.
+-add <Card /> in the pp.jsx
+----------------------------
+For add tailwind css in the project.
+-Take the line from tailwind css website."npm install tailwindcss @tailwindcss/vite"
+- This link from installation section from 2nd step.
+
+-add this line in 'vite.confog.js' file  --import tailwindcss from '@tailwindcss/vite'
+-add this line in plugins array on beside react()."tailwindcss()"
+
+---------------------
+-take code form 3rd step form tailwind website.--@import "tailwindcss";
+add this line in index.css file at top of file.
+--start making card in 'card.jsx' file.
+
+---------------
+-for icons- go to icons named ebsite and copy line form installation section-react-npm -then 
+it shows "npm install lucide-react".
+-type this in terminal.
+
+-add import line in card.jsx."import { Search, UserPlus } from "lucide-react";"
+or you just type 'Search' in the tag then import line automatically added at top of line.
+
+----------------------------------------------------
+17-03-26(deploy steps):
+deploy the website:
+- create a repo(aa repo bija folder ma hoy to pan aeni alag thi repo banavani.)
+-repo ma local code ne git par push  karya pachi
+-react deployment name ni website open karo.
+  -tema first step (Github Pages par click kro. right side na menubar ma )
+
+-step-1 ( step 1 ma add wali link chene first jena par click kro..)
+  ("homepage": "https://myusername.github.io/my-app",)
+   - myusername ma github na user nu name lakhvanu.
+    -my-app ma tme banaveli je repo che tenu name lakhvanu.
+    -aa link ne pacakage json ma { starting ma j ,name ni upar} bracaket che ema paset karvani link..
+
+-step-2 ( step 2 ma install wali link first)
+  -npm install --save gh-pages(aa link ne terminal ma run karvanu)
+  -*step-2 ma j 3rd number ni link('add the following scripts in your package.json:')
+  -aa 2 line copy karya bad tene package.json ma-scriptsni andar,priview ni niche last ma add karvani. 
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+***aa upper na code ma(-d build ma change kri ne -d dist karvani)
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d dist" 
+  **pachi vite.config.js ni file ma plugins ni niche aa line add karvani che.-> base:"/Note/"
+
+-step-3(1st link copy kro)
+ npm run deploy(terminal ma run karavo)
+ aa command run krta tmne published no message aavse ..
+
+-step-4 published no message aave etle github ma javanau ema repo na folder ni under action ma javanu
+ ema pages build and deployment ni link ma javanu pachi ema click kri ne deploy ma javanu ema link aave etle thay gayu deploy....... simple:)
+
+
+ ---------------------
+
+ api fetch karva mate json placeholder ni official website per thi scroll karta resource ma 10user vali (last ma) api aavse tenio pr click karvani 

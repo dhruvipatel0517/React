@@ -1,5 +1,9 @@
 ---------------------------React-notes---------------------
 
+tailwind Css Install :::::::::::  npm install tailwindcss @tailwindcss/vite
+
+
+
 1st step: - react vite@latest--write in terminal -project name,select react,javascipt,1st que-no,2nd que-yes.
 
 
@@ -13,6 +17,15 @@ body {
   box-sizing: border-box;
   
 }
+install karo 
+tailwind Css Install :::::::::::  npm install tailwindcss @tailwindcss/vite
+
+vite.config.js vali file ma 
+import tailwindcss from '@tailwindcss/vite'
+tailwindcss(), add kao 
+
+and index.css ma tailwind css ne import karo
+@import "tailwindcss";
 -------------------------------------
 
 create Components folder in src.

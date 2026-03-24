@@ -2,6 +2,13 @@
 
 tailwind Css Install :::::::::::  npm install tailwindcss @tailwindcss/vite
 
+================================ React Router Dom
+
+1.Install react Router deployment 
+2. Main.jsx == Wrap App With BrowserRouter
+3. App.jsx == Create a Route for All Pages
+
+
 
 
 1st step: - react vite@latest--write in terminal -project name,select react,javascipt,1st que-no,2nd que-yes.

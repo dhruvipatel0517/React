@@ -1,8 +1,14 @@
 ---------------------------React-notes---------------------
 
 tailwind Css Install :::::::::::  npm install tailwindcss @tailwindcss/vite
+React router Dom ::::::::::  npm install react-router-dom
+Axios ::::::::: npm install axios
 
 ================================ React Router Dom
+
+main.jsx ma strictmode valu delete kari pachi BrowserRouter ne import karvanu 
+<strictmode></strictmode> ne badle <BrowserRouter></BrowserRouter>  aa lakhvanu 
+aatle automatic import thay jase jo ny thay to import karvanu
 
 1.Install react Router deployment 
 2. Main.jsx == Wrap App With BrowserRouter

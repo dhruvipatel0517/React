@@ -4,10 +4,10 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <section className="max-lg:bg-[url(/img.jpg)] bg-no-repeat bg-cover bg-center lg:bg-[#cebdb5] h-screen md:h-136  overflow-hidden flex items-center justify-between md:px-6 w-full">
-        <div className="w-full lg:backdrop-blur-none backdrop-blur-sm h-screen flex items-start justify-center flex-col lg:w-1/2 px-6 lg:pl-10 text-white lg:text-black">
+      <section className="bg-[#cebdb5] h-136 overflow-hidden flex items-center justify-between px-6 w-full">
+        <div className="w-1/2 pl-10">
           {/* sale  */}
-          <div className="inline-block bg-white/60 backdrop-blur-sm rounded-full px-3 py-1 text-lg md:text-xl">
+          <div className="inline-block bg-white/60 backdrop-blur-sm rounded-full px-3 py-1 text-xl">
             <div className="flex items-center justify-center gap-x-2">
               <BadgePercent fill="#7f5539" className="text-white w-8 h-8" />
               <span className="font-semibold">50% OFF </span> Summer Super Sale
@@ -15,18 +15,16 @@ const Hero = () => {
           </div>
 
           {/* title */}
-          <h1 className="md:text-3xl  text-2xl font-medium xl:leading-relaxed leading-normal text-nowrap">
+          <h1 className="text-5xl font-medium leading-relaxed">
             Step into Style : Your
-            
-
+            <br />
             Ultimate Fashion Destination
           </h1>
 
           {/* description */}
-          <p className="text-lg md:text-xl  font-noraml leading-normal text-black/60">
+          <p className="text-xl font-noraml leading-normal text-black/60">
             Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ab  
- vel nihil quaerat illum qui? Natus.
+            adipisicing elit. Ab  <br /> vel nihil quaerat illum qui? Natus.
           </p>
 
           {/* button */}
@@ -36,9 +34,9 @@ const Hero = () => {
         </div>
 
         <img
-          src="/img.jpg"
+          src="/hero.jpg"
           alt="hero-img"
-          className="hidden lg:block lg:w-1/2 h-full object-contain lg:mt-5  rotate-y-180"
+          className="w-1/2 object-cover -mt-5 scale-85 rotate-y-180"
         />
       </section>
     </>
@@ -46,4 +44,3 @@ const Hero = () => {
 };
 
 export default Hero;
- 

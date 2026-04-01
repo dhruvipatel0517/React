@@ -1,19 +1,32 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Navbar from "./Layout/Navbar"
-import Product from "./Pages/Product"
 import Home from './Pages/Home'
+import { Routes , Route} from 'react-router-dom'
+import Product from './Pages/Product'
+import NavBar from './Layout/NavBar';
+import Collection  from './Pages/Collection';
+import Shop from './Pages/Shop';
+import Footer from './Layout/Footer';
+import Contact from './Pages/ContactUs';
+import About from './Pages/AboutUs';
+
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/product' element={<Product />}></Route>
-      </Routes>
+    <NavBar />
+     <Routes>
+      <Route path='/' element = {<Home />} />
+      <Route path='/collection' element={<Collection />} />
+      <Route path='/shop' element={<Shop /> } />
+      <Route path='/shop/:collection' element={<Shop />} />
+      <Route path='/product/:id' element = {<Product />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact /> } />
+     </Routes>
+     <Footer />
+  
     </>
   )
-}
+};
 
 export default App
